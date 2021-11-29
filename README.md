@@ -46,8 +46,8 @@ migrate --reset --network rinkeby
 ```
 In order for this deployment to be successfull, you will need to do two changes to the project. First, create a file in the same directory as truffle-config.js named .secret with the mnemonic to you ethereum account. Next, add your Infura endpoint address to the infuraKey variable in the truffle-config.js file. You can already find the project deployed on the Rinkeby testnet here:
 ```
-    Verifier:               https://rinkeby.etherscan.io/address/0xCB2d66bd0e8260b61B1BBB641C0785778BEf6fC2          
-    SolnSquareVerifier:     https://rinkeby.etherscan.io/address/0x4A87037a1908f5b7392006165f6Af273248dac27
+Verifier:               https://rinkeby.etherscan.io/address/0xCB2d66bd0e8260b61B1BBB641C0785778BEf6fC2          
+SolnSquareVerifier:     https://rinkeby.etherscan.io/address/0x4A87037a1908f5b7392006165f6Af273248dac27
 ```
 To mint tokens, run the _mint.js_ file from your terminal. Remember to change set the .secret file, to add your Infura endpoint address and to add the address belonging to the .secret mnemonic to the _owner_ variable. You will also need to add to the _contractAddress_ the SolnSquareVerifier contract address deployed by you:
 ```
@@ -55,11 +55,11 @@ node mint.js
 ```
 You can find ten token already deployed at OpenSea collection: https://testnets.opensea.io/collection/unidentified-contract-xzxlfuywlg. You can check that the first five tokens were transacted to a different address:
 ```
-    https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/0
-    https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/1
-    https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/2
-    https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/3
-    https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/4
+https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/0
+https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/1
+https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/2
+https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/3
+https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/4
 ```
 
 ## Contract ABI
