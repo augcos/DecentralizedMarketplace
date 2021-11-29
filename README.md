@@ -50,20 +50,22 @@ In order for this deployment to be successfull, you will need to do two changes 
     SolnSquareVerifier:     https://rinkeby.etherscan.io/address/0x4A87037a1908f5b7392006165f6Af273248dac27
 ```
 To mint tokens, run the _mint.js_ file from your terminal. Remember to change set the .secret file, to add your Infura endpoint address and to add the address belonging to the .secret mnemonic to the _owner_ variable. You will also need to add to the _contractAddress_ the SolnSquareVerifier contract address deployed by you:
-'''
+```
 node mint.js
-'''
+```
 You can find ten token already deployed at OpenSea collection: https://testnets.opensea.io/collection/unidentified-contract-xzxlfuywlg. You can check that the first five tokens were transacted to a different address:
+```
     https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/0
     https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/1
     https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/2
     https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/3
     https://testnets.opensea.io/assets/0x4a87037a1908f5b7392006165f6af273248dac27/4
+```
 
 ## Contract ABI
 The contract ABI of the SolnSquareVerifier is as follows:
 
-'''
+```
 [ { anonymous: false,
     inputs: [ [Object], [Object], [Object] ],
     name: 'Approval',
@@ -305,5 +307,4 @@ The contract ABI of the SolnSquareVerifier is as follows:
     stateMutability: 'nonpayable',
     type: 'function',
     signature: '0xad4a2424' } ]
-'''
-
+```
